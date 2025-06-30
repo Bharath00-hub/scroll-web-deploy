@@ -1,12 +1,12 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = 'manjukolkar007/test-dev:latest'
+        DOCKER_IMAGE = 'bhagath003/test-dev:latest'
     }
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/manjukolkar/scroll-web.git'
+                git 'https://github.com/Bharath00-hub/scroll-web-deploy.git'
             }
         }
         stage('Build Docker Image') {
